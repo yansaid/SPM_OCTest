@@ -11,7 +11,7 @@
 @implementation Test
 
 - (void)testRun {
-    NSLog(@"%@", "test run");
+    NSLog(@"%s", "test run");
 }
 
 @end

@@ -25,7 +25,7 @@ let package = Package(
         .target(
             name: "SPM_OCTest",
             path: "Sources",
-            publicHeadersPath: "Sources"),
+            sources: ["include"]),
         .testTarget(
             name: "SPM_OCTestTests",
             dependencies: ["SPM_OCTest"]),
