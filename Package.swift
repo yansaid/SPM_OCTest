@@ -12,6 +12,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "SPM_OCTest",
+            type: .dynamic,
             targets: ["SPM_OCTest"]),
     ],
     dependencies: [
@@ -23,7 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SPM_OCTest",
-            path: "Sources"),
+            path: "Sources",
+            publicHeadersPath: "Sources"),
         .testTarget(
             name: "SPM_OCTestTests",
             dependencies: ["SPM_OCTest"]),
