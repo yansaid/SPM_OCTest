@@ -6,7 +6,7 @@
 //  Copyright © 2019 yan. All rights reserved.
 //
 
-#import "Test.h"
+#import "include/Test.h"
 
 @implementation Test
 
